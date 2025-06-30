@@ -49,4 +49,19 @@ Model Comparison and Saving:
 
     Compared the accuracy of all trained models.
 
+Results:
+
+The target variable was heavily imbalanced, with significantly more instances of '-1' (Pass) than '1' (Fail). SMOTE effectively balanced the classes in the training data.
+
+A few features showed moderate correlation with the target variable, which was visualized through bar plots and boxplots.
+
+Model Performance:
+
+    Random Forest and SVM models achieved high accuracy (0.99) on the test set.
+    
+    Naive Bayes performed significantly worse (0.57 accuracy).
+    
+Hyperparameter tuning for the Random Forest model did not significantly improve the performance, indicating that the default parameters were already quite effective.
+
+Based on the accuracy, both Random Forest and SVM were the best-performing models. The tuned Random Forest model was saved as the best model.
 
